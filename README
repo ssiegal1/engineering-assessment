@@ -1,0 +1,26 @@
+# Food Truck Search
+
+My implementation is an API that allows searching of food trucks, and filtering the results by location and/or freshness.
+
+## To run it
+
+# Set up the GOOGLE_MAPS_API_KEY environment variable
+
+In your terminal set GOOGLE_MAPS_API_KEY to your key (in this case, the recruiter has an API key I created that you can use):
+
+export GOOGLE_MAPS_API_KEY=<your-secret-key>
+
+Then run the application:
+
+go run .
+
+Then using curl or a browser, issue requests like
+http://localhost:8080/foodtrucks?lat=37.7921505484&lon=-122.39399&debug&search=cra
+
+http://localhost:8080/foodtrucks?newest
+
+http://localhost:8080/foodtrucks?search=pretzel
+
+## To run the unit tests
+
+go test .
